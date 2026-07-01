@@ -2,10 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Cousine" rel="stylesheet" type="text/css">
+  <meta name="google-site-verification" content="hzqr8w4WIWt6Qzbs4Q8vwJit_jXgYzFvEK5gz3Gp26A">
+  <meta charset="utf-8">
     <title>My Personal Portfolio</title>
     <style>
-        /* 1. Global Reset & Typography */
+         * {
+      font-family: 'Cousine';
+    }
+    * {
+      text-align: center;
+    }
+    #logo {
+      display: block;
+      height: 500px;
+      width: 100%;
+      background-image: url('logo.png');
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+       
         * {
             box-sizing: border-box;
             margin: 0;
@@ -18,7 +35,7 @@
             background-color: #f9f9f9;
         }
         
-        /* 2. Navigation Bar (Flexbox Layout) */
+        
         nav {
             display: flex;
             justify-content: space-between;
@@ -42,7 +59,7 @@
             color: #3498db;
         }
 
-        /* 3. Structural Layout Container */
+        
         .container {
             max-width: 800px;
             margin: 2rem auto;
@@ -62,21 +79,19 @@
             padding-bottom: 0.5rem;
         }
 
-        /* 4. Profile Image Styling */
         .profile-img {
             width: 150px;
             height: 150px;
-            object-fit: cover;     /* Prevents stretching */
-            border-radius: 50%;    /* Makes it a perfect circle */
+            object-fit: cover;    
+            border-radius: 50%;    
             border: 3px solid #2c3e50;
             margin-bottom: 1rem;
-            display: block;        /* Centers it nicely if needed */
+            display: block;        
         }
 
-        /* 5. Projects Section (CSS Grid Layout) */
+       
         .project-grid {
             display: grid;
-            /* Responsively wraps items from 1 column on mobile to 2 or 3 columns on desktop */
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
             margin-top: 1.5rem;
@@ -88,7 +103,6 @@
             padding: 1.5rem;
             transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
         }
-        /* Interactive Hover Effect */
         .project-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
